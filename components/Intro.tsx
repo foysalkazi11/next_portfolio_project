@@ -44,7 +44,7 @@ const Intro = () => {
         </div>
       </div>
 
-      <motion.p
+      <motion.h1
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading[1.5] sm:text-4xl"
@@ -54,7 +54,7 @@ const Intro = () => {
         <span className="font-bold">8 years</span> of experience. I enjoy
         building <span className="italic">sites & apps</span>. My focus is{" "}
         <span className="underline">React (Next.js)</span>.
-      </motion.p>
+      </motion.h1>
 
       <motion.div
         initial={{ opacity: 0, y: 100 }}
@@ -80,24 +80,26 @@ const Intro = () => {
           Download CV
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
-        <a
-          className="flex items-center justify-center bg-white text-gray-700  p-4 rounded-full 
+        <div className="flex items-center gap-2">
+          <a
+            className="flex items-center justify-center bg-white text-gray-700  p-4 rounded-full 
         outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition-all cursor-pointer border
          border-black/10"
-          href="https://www.linkedin.com/in/mdfoysalkazi11/"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
-        <a
-          className="flex items-center justify-center bg-white  text-gray-700  p-4 rounded-full 
+            href="https://www.linkedin.com/in/mdfoysalkazi11/"
+            target="_blank"
+          >
+            <BsLinkedin />
+          </a>
+          <a
+            className="flex items-center justify-center bg-white  text-gray-700  p-4 rounded-full 
         outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition-all cursor-pointer border
          border-black/10"
-          href="https://github.com/foysalkazi11"
-          target="_blank"
-        >
-          <FaGithubSquare className="text-[1.3rem]" />
-        </a>
+            href="https://github.com/foysalkazi11"
+            target="_blank"
+          >
+            <FaGithubSquare className="text-[1.3rem]" />
+          </a>
+        </div>
       </motion.div>
     </section>
   );
