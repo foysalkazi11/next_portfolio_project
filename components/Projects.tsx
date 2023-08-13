@@ -5,7 +5,7 @@ import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   return (
-    <section id="projects">
+    <section id="projects" className="scroll-mt-28">
       <SectionHeading>My projects</SectionHeading>
       {projectsData?.map((project, index) => {
         return (
