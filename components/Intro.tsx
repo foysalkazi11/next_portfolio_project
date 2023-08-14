@@ -3,13 +3,15 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { FaGithubAlt, FaGithubSquare } from "react-icons/fa";
-
+import { FaGithubSquare } from "react-icons/fa";
+import useSectionInView from "@/lib/hooks/useSectionInView";
 const Intro = () => {
+  const { ref } = useSectionInView("Home", 0.5);
   return (
     <section
+      ref={ref}
       id="home"
       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
