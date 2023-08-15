@@ -7,8 +7,10 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import useSectionInView from "@/lib/hooks/useSectionInView";
+import { useActiveSectionContext } from "@/context/active-section-context";
 const Intro = () => {
   const { ref } = useSectionInView("Home", 0.5);
+  const { setTimeOfLastClick, setActiveSection } = useActiveSectionContext();
   return (
     <section
       ref={ref}
@@ -71,14 +73,17 @@ const Intro = () => {
           className="group flex items-center justify-center gap-2 bg-gray-900 text-white px-7 py-3 rounded-full 
           outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition-all"
           href={"#contact"}
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
         >
           Contract me here
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
           className="group flex items-center justify-center gap-2 bg-white  px-7 py-3 rounded-full
-         outline-none focus:scale-110 hover:scale-110 active:scale-105 transition-all cursor-pointer border border-black/10
-         "
+         outline-none focus:scale-110 hover:scale-110 active:scale-105 transition-all cursor-pointer borderBlack"
           href="/cv.pdf"
           download
         >
@@ -88,8 +93,7 @@ const Intro = () => {
         <div className="flex items-center gap-2">
           <a
             className="flex items-center justify-center bg-white text-gray-700  p-4 rounded-full 
-        outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition-all cursor-pointer border
-         border-black/10"
+        outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition-all cursor-pointer borderBlack"
             href="https://www.linkedin.com/in/mdfoysalkazi11/"
             target="_blank"
           >
@@ -97,8 +101,7 @@ const Intro = () => {
           </a>
           <a
             className="flex items-center justify-center bg-white  text-gray-700  p-4 rounded-full 
-        outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition-all cursor-pointer border
-         border-black/10"
+        outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition-all cursor-pointer borderBlack"
             href="https://github.com/foysalkazi11"
             target="_blank"
           >
