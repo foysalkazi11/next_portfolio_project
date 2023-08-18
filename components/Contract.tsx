@@ -4,6 +4,7 @@ import SectionHeading from "./SectionHeading";
 import { FaPaperPlane } from "react-icons/fa";
 import { motion } from "framer-motion";
 import useSectionInView from "@/lib/hooks/useSectionInView";
+import sendEmail from "@/actions/sendEmail";
 
 const Contract = () => {
   const { ref } = useSectionInView("Contact", 0.5);
@@ -25,15 +26,21 @@ const Contract = () => {
         </a>{" "}
         or through this form.{" "}
       </p>
-      <form className="mt-10 flex flex-col">
+      <form action={sendEmail} className="mt-10 flex flex-col">
         <input
+          name="email"
           placeholder="Your email"
           type="email"
           className="h-14 px-4 rounded-lg borderBlack"
+          required
+          maxLength={50}
         />
         <textarea
+          name="message"
           placeholder="Your message"
           className="h-52 my-3 rounded-lg borderBlack p-4"
+          required
+          maxLength={500}
         />
         <button
           type="submit"
