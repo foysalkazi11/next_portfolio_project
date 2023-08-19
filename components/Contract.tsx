@@ -26,7 +26,12 @@ const Contract = () => {
         </a>{" "}
         or through this form.{" "}
       </p>
-      <form action={sendEmail} className="mt-10 flex flex-col">
+      <form
+        action={async (formData) => {
+          await sendEmail(formData);
+        }}
+        className="mt-10 flex flex-col"
+      >
         <input
           name="email"
           placeholder="Your email"
@@ -40,7 +45,7 @@ const Contract = () => {
           placeholder="Your message"
           className="h-52 my-3 rounded-lg borderBlack p-4"
           required
-          maxLength={500}
+          maxLength={5000}
         />
         <button
           type="submit"
