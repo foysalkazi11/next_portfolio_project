@@ -1,9 +1,8 @@
 "use server";
-
-import EmailTemplate from "@/eamil/contract-form-email";
+import React from "react";
 import getErrorMessage from "@/lib/utils/getErrorMessage";
 import validateString from "@/lib/utils/validateString";
-import { NextResponse } from "next/server";
+import ContractFormEmailTemplate from "@/email/contract-form-email";
 import { Resend } from "resend";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -23,21 +22,25 @@ const sendEmail = async (formData: FormData) => {
       error: "Invalid message",
     };
   }
-
+  let data;
   try {
-    await resend.emails.send({
-      from: "Contract Form <onboarding@resend.dev>",
+    data = await resend.emails.send({
+      from: "Contract Form <onboarding@resend.com>",
       to: "foysalkazi11@gmail.com",
       subject: "Message form contract form",
       reply_to: email as string,
-      text: message as string,
-      // react: "Hello world",
+      react: React.createElement(ContractFormEmailTemplate, {
+        message: message as string,
+        senderEmail: email as string,
+      }),
     });
   } catch (error) {
     return {
       error: getErrorMessage(error),
     };
   }
+
+  return { data };
 };
 
 export default sendEmail;

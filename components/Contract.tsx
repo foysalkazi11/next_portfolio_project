@@ -1,10 +1,11 @@
 "use client";
 import React from "react";
 import SectionHeading from "./SectionHeading";
-import { FaPaperPlane } from "react-icons/fa";
 import { motion } from "framer-motion";
 import useSectionInView from "@/lib/hooks/useSectionInView";
 import sendEmail from "@/actions/sendEmail";
+import SubmitBtn from "./Submit-but";
+import toast from "react-hot-toast";
 
 const Contract = () => {
   const { ref } = useSectionInView("Contact", 0.5);
@@ -21,14 +22,19 @@ const Contract = () => {
       <SectionHeading>Contract Me</SectionHeading>
       <p className="text-gray-700 text-center -mt-6">
         Please contract me directly at{" "}
-        <a className="underline" href="mailto:foysalkazi11@gmail.com">
+        <a className="underline" href="mailto:foysalkazi11@gmail.dev">
           foysalkazi11@gmail.com
         </a>{" "}
         or through this form.{" "}
       </p>
       <form
         action={async (formData) => {
-          await sendEmail(formData);
+          const { data, error } = await sendEmail(formData);
+          if (error) {
+            toast.error(error);
+            return;
+          }
+          toast.success("Email sent successfully");
         }}
         className="mt-10 flex flex-col"
       >
@@ -47,14 +53,7 @@ const Contract = () => {
           required
           maxLength={5000}
         />
-        <button
-          type="submit"
-          className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none 
-          focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition-all"
-        >
-          Submit{" "}
-          <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
-        </button>
+        <SubmitBtn />
       </form>
     </motion.section>
   );
