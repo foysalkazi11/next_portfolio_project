@@ -83,7 +83,7 @@ const Intro = () => {
         </Link>
         <a
           className="group flex items-center justify-center gap-2 bg-white  px-7 py-3 rounded-full
-         outline-none focus:scale-110 hover:scale-110 active:scale-105 transition-all cursor-pointer borderBlack"
+         outline-none focus:scale-110 hover:scale-110 active:scale-105 transition-all cursor-pointer borderBlack dark:bg-white/10"
           href="/cv.pdf"
           download
         >
@@ -93,7 +93,7 @@ const Intro = () => {
         <div className="flex items-center gap-2">
           <a
             className="flex items-center justify-center bg-white text-gray-700  p-4 rounded-full 
-        outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition-all cursor-pointer borderBlack"
+        outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition-all cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
             href="https://www.linkedin.com/in/mdfoysalkazi11/"
             target="_blank"
           >
@@ -101,7 +101,7 @@ const Intro = () => {
           </a>
           <a
             className="flex items-center justify-center bg-white  text-gray-700  p-4 rounded-full 
-        outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition-all cursor-pointer borderBlack"
+        outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition-all cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
             href="https://github.com/foysalkazi11"
             target="_blank"
           >
