@@ -20,7 +20,7 @@ const Contract = () => {
       viewport={{ once: true }}
     >
       <SectionHeading>Contract Me</SectionHeading>
-      <p className="text-gray-700 text-center -mt-6">
+      <p className="text-gray-700 text-center -mt-6 dark:text-white/80">
         Please contract me directly at{" "}
         <a className="underline" href="mailto:foysalkazi11@gmail.dev">
           foysalkazi11@gmail.com
@@ -36,20 +36,20 @@ const Contract = () => {
           }
           toast.success("Email sent successfully");
         }}
-        className="mt-10 flex flex-col"
+        className="mt-10 flex flex-col dark:text-black"
       >
         <input
           name="email"
           placeholder="Your email"
           type="email"
-          className="h-14 px-4 rounded-lg borderBlack"
+          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           required
           maxLength={50}
         />
         <textarea
           name="message"
           placeholder="Your message"
-          className="h-52 my-3 rounded-lg borderBlack p-4"
+          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           required
           maxLength={5000}
         />
