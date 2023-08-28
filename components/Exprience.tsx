@@ -21,7 +21,7 @@ const Experience = () => {
           <React.Fragment key={index}>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              date="2006 - 2008"
+              date={`${experience?.date}`}
               iconStyle={{
                 background:
                   theme === "light" ? "white" : "rgba(255,255,255,0.05)",
@@ -43,8 +43,15 @@ const Experience = () => {
                     : "0.4rem solid rgba(255,255,255,0.5)",
               }}
             >
-              <h3 className="font-semibold capitalize">{experience?.title}</h3>
-              <p className="font-normal !mt-0">{experience?.location}</p>
+              <h2 className="font-semibold capitalize text-gray-700 dark:text-white/75 tracking-wide">
+                {experience?.company}
+              </h2>
+              <h3 className="font-semibold capitalize tracking-wide">
+                {experience?.title}
+              </h3>
+              <p className="!font-light !mt-0 !text-sm">
+                {experience?.location}
+              </p>
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {experience?.description}
               </p>

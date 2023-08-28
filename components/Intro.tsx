@@ -25,17 +25,17 @@ const Intro = () => {
             transition={{ type: "tween", duration: 0.2 }}
           >
             <Image
-              src={"/profile_pic_one.png"}
+              src={"/profile_pic_two.png"}
               alt="pro_pic"
               width={192}
               height={192}
               quality={95}
               priority={true}
-              className="h-24 w-24 object-cover rounded-full border-[.35rem] border-white shadow-xl"
+              className="h-24 w-24 object-cover rounded-full border-[.35rem] border-white shadow-xl dark:border-white/10"
             />
           </motion.div>
 
-          <motion.span
+          {/* <motion.span
             className="absolute bottom-0 right-0 text-4xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -47,7 +47,7 @@ const Intro = () => {
             }}
           >
             👏
-          </motion.span>
+          </motion.span> */}
         </div>
       </div>
 
@@ -56,9 +56,9 @@ const Intro = () => {
         animate={{ opacity: 1, y: 0 }}
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading[1.5] sm:text-4xl"
       >
-        <span className="font-bold">Hello, I'm Ricardo.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">8 years</span> of experience. I enjoy
+        <span className="font-bold">Hello, I'm Md Foysal Kazi.</span> I'm a{" "}
+        <span className="font-bold">front-end developer</span> with{" "}
+        <span className="font-bold">3 years</span> of experience. I enjoy
         building <span className="italic">sites & apps</span>. My focus is{" "}
         <span className="underline">React (Next.js)</span>.
       </motion.h1>

@@ -3,8 +3,8 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/project_moment.png";
-import rmtdevImg from "@/public/project_moment.png";
-import wordanalyticsImg from "@/public/project_moment.png";
+import furniture_store from "@/public/e_furniture_store.png";
+import cocktailBD_api from "@/public/cocktailDB_project.png";
 
 export const links = [
   {
@@ -34,53 +34,83 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+  // {
+  //   title: "Graduated bootcamp",
+  //   location: "Miami, FL",
+  //   description:
+  //     "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+  //   icon: React.createElement(LuGraduationCap),
+  //   date: "2019",
+  // },
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    company: "Blending101",
+    title: "Mid Front-End Developer (remote)",
+    location: "Florida, US",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Create and manage responsive websites with user-friendly interfaces, ensuring cross-browser compatibility. Integrate dynamic content through backend services and REST/GraphQL APIs, collaborating closely with design and backend teams. Expertly use React, SCSS for high-quality visuals. Prioritize performance optimization and stay updated with the latest trends for continuous enhancement.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "Sep, 2021 - Present",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    company: "MzTech Corp.",
+    title: "React Developer (remote)",
+    location: "New York, US",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Contributed to feature development, acquiring hands-on expertise in web best practices. Employed Firebase for backend, enabling social login and serving as database. Incorporated REST APIs for e-commerce, elevating functionality. Collaborated on debugging, refining coding skills. Transformed designs into reusable React components. Operated under Agile, ensuring timely task completion.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Feb, 2021 - Aug, 2021",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Moment",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "Full stack project. User can share their best moment with world. Upload pictures, show places within map, comments and rating.",
+    tags: [
+      "React",
+      "React Context API",
+      "Node JS",
+      "Express JS",
+      "MongoDB",
+      "Passport with JWT",
+      "Cloudinary",
+      "Mapbox",
+    ],
     imageUrl: corpcommentImg,
+    liveLink: "https://your-moments.netlify.app/",
+    gitHubLink: "https://github.com/foysalkazi11/your-moments",
   },
   {
-    title: "rmtDev",
+    title: "Jenni Kayne",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Beautiful and responsive furniture shope with authentication and authorization system.",
+    tags: [
+      "React",
+      "React Context API",
+      "Node JS",
+      "Express JS",
+      "MongoDB",
+      "JWT",
+    ],
+    imageUrl: furniture_store,
+    liveLink: "https://hopeful-goodall-7769f7.netlify.app/",
+    gitHubLink: "https://github.com/foysalkazi11/mern-furniture-store",
   },
   {
-    title: "Word Analytics",
+    title: "CocktailDB API",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Consume cocktailDB API and show cocktail within card. User can search cocktail, filter and view details",
+    tags: [
+      "React",
+      "React Context API",
+      "CocktailDB Api",
+      "Express JS",
+      "Css flexbox and grid",
+    ],
+    imageUrl: cocktailBD_api,
+    liveLink: "https://gifted-varahamihira-d66b31.netlify.app/",
+    gitHubLink: " https://github.com/foysalkazi11/react-cocktail-api-project",
   },
 ] as const;
 
@@ -100,7 +130,7 @@ export const skillsData = [
   //   "MongoDB",
   "Redux",
   //   "GraphQL",
-  "Apollo",
+  "ApolloGQL",
   //   "Express",
   //   "PostgreSQL",
   //   "Python",
