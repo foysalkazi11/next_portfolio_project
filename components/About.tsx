@@ -17,26 +17,26 @@ const About = () => {
     >
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-3">
-        After completing masters's degree in{" "}
-        <span className="font-medium">Finance</span>, I decided to pursue my
-        passion for programming. I learned{" "}
-        <span className="font-medium">front-end web development</span> from
-        various platform including freeCodeCamp, Udemy and YouTube.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        critical thinking and problem-solving aspect. I{" "}
-        <span className="underline">love</span> the feeling of finally figuring
-        out a solution to a problem. My core stack is{" "}
-        <span className="font-medium">React, Next.js</span>. I am also familiar
-        with TypeScript. I am always looking to learn new technologies. I am
-        currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a front-end
-        developer.
+        I hold a master's degree in <span className="font-medium">Finance</span>
+        , but my <span className="font-medium">passion</span> for programming
+        led me to a career change. I acquired{" "}
+        <span className="font-medium"> web development</span> skills from
+        platforms like Full Stack Open, freeCodeCamp, Udemy, and YouTube. I find
+        joy in{" "}
+        <span className="italic">problem-solving and critical thinking</span> in
+        programming, especially when I discover solutions. My core stack
+        includes{" "}
+        <span className="font-medium">React, Next.js, and TypeScript</span>, and
+        I'm also familiar in Node.js and MongoDB. I'm constantly eager to learn
+        new technologies and currently seeking a full-time{" "}
+        <span className="font-medium">front-end</span> developer role.
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy spending
-        time with family, playing with kids and prayer. I am also curious to
-        explore new places, local cuisine,culture and history .
+        <span className="italic"> Outside of coding</span> , I cherish family
+        time, playing with kids, and moments of prayer. I'm an explorer at
+        heart, always curious about new places, local cuisine, culture, and
+        history.
         {/* <span className="font-medium">learning new things</span>. I am currently
         learning about{" "}
         <span className="font-medium">history and philosophy</span>. I'm also
