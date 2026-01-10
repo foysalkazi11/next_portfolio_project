@@ -21,13 +21,13 @@ const About = () => {
         , but my <span className="font-medium">passion</span> for programming
         led me to a career change. I acquired{" "}
         <span className="font-medium"> web development</span> skills from
-        platforms like Full Stack Open, freeCodeCamp, Udemy, and YouTube. I find
+        platforms like Full Stack Open(University of Helsinki), freeCodeCamp, Udemy, and YouTube. I find
         joy in{" "}
         <span className="italic">problem-solving and critical thinking</span> in
         programming, especially when I discover solutions. My core stack
         includes{" "}
-        <span className="font-medium">React, Next.js, and TypeScript</span>, and
-        I'm also familiar in Node.js and MongoDB. I'm constantly eager to learn
+        <span className="font-medium">React, React Native, Next.js, and TypeScript</span>, and
+        I'm also familiar in Supabase, Node.js and MongoDB. I'm constantly eager to learn
         new technologies and currently seeking a full-time{" "}
         <span className="font-medium">front-end</span> developer role.
       </p>

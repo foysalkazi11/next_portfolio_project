@@ -5,6 +5,8 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/project_moment.png";
 import furniture_store from "@/public/e_furniture_store.png";
 import cocktailBD_api from "@/public/cocktailDB_project.png";
+import spotLocal from "@/public/spotLocal.png";
+import bloodLinkSearch from "@/public/BloodLink_serach.png";
 
 export const links = [
   {
@@ -64,76 +66,107 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Moment",
+    title: "Spot Local",
     description:
-      "Full stack project. User can share their best moment with world. Upload pictures, show places within map, comments and rating.",
+      "SpotLocal is a full-stack local business discovery platform that shows nearby businesses with real-time notifications, interactive maps, geolocation search, multi-provider auth, and multi-language support. Features infinite scroll pagination, admin panel, and review system.",
     tags: [
       "React",
-      "React Context API",
-      "Node JS",
-      "Express JS",
-      "MongoDB",
-      "Passport with JWT",
-      "Cloudinary",
-      "Mapbox",
+      "TypeScript",
+      "Supabase",
+      "Leaflet",
+      "React Query",
+      "Tailwind CSS",
+      "React Hook Form",
+      "Zod",
+      "i18next",
     ],
-    imageUrl: corpcommentImg,
-    liveLink: "https://your-moments.netlify.app/",
-    gitHubLink: "https://github.com/foysalkazi11/your-moments",
+    imageUrl: spotLocal,
+    liveLink: "https://spotlocal.kazilab.com",
+    gitHubLink: "https://github.com/foysalkazi11/spotLocal",
   },
   {
-    title: "Jenni Kayne",
+    title: "BloodLink",
     description:
-      "Beautiful and responsive furniture shope with authentication and authorization system.",
-    tags: [
-      "React",
-      "React Context API",
-      "Node JS",
-      "Express JS",
-      "MongoDB",
-      "JWT",
-    ],
-    imageUrl: furniture_store,
-    liveLink: "https://hopeful-goodall-7769f7.netlify.app/",
-    gitHubLink: "https://github.com/foysalkazi11/mern-furniture-store",
+      "BloodLink is a React Native mobile app that connects blood donors with donation clubs. It includes real-time chat, push notifications, event management, club analytics, and location-based donor matching. The app uses server-side push notifications and Google AdMob integration.",
+    tags: ["React Native", "Expo", "TypeScript", "Supabase", "Google AdMob"],
+    imageUrl: bloodLinkSearch,
+    liveLink: "https://play.google.com/store/apps/details?id=com.foysalkazi11.bloodlink&hl=en",
+    gitHubLink: "https://github.com/foysalkazi11/bloodConnect",
   },
-  {
-    title: "CocktailDB API",
-    description:
-      "Consume cocktailDB API and show cocktail within card. User can search cocktail, filter and view details",
-    tags: [
-      "React",
-      "React Context API",
-      "CocktailDB Api",
-      "Express JS",
-      "Css flexbox and grid",
-    ],
-    imageUrl: cocktailBD_api,
-    liveLink: "https://gifted-varahamihira-d66b31.netlify.app/",
-    gitHubLink: " https://github.com/foysalkazi11/react-cocktail-api-project",
-  },
+  // {
+  //   title: "Moment",
+  //   description:
+  //     "Full stack project. User can share their best moment with world. Upload pictures, show places within map, comments and rating.",
+  //   tags: [
+  //     "React",
+  //     "React Context API",
+  //     "Node JS",
+  //     "Express JS",
+  //     "MongoDB",
+  //     "Passport with JWT",
+  //     "Cloudinary",
+  //     "Mapbox",
+  //   ],
+  //   imageUrl: corpcommentImg,
+  //   liveLink: "https://your-moments.netlify.app/",
+  //   gitHubLink: "https://github.com/foysalkazi11/your-moments",
+  // },
+  // {
+  //   title: "Jenni Kayne",
+  //   description:
+  //     "Beautiful and responsive furniture shope with authentication and authorization system.",
+  //   tags: [
+  //     "React",
+  //     "React Context API",
+  //     "Node JS",
+  //     "Express JS",
+  //     "MongoDB",
+  //     "JWT",
+  //   ],
+  //   imageUrl: furniture_store,
+  //   liveLink: "https://hopeful-goodall-7769f7.netlify.app/",
+  //   gitHubLink: "https://github.com/foysalkazi11/mern-furniture-store",
+  // },
+  // {
+  //   title: "CocktailDB API",
+  //   description:
+  //     "Consume cocktailDB API and show cocktail within card. User can search cocktail, filter and view details",
+  //   tags: [
+  //     "React",
+  //     "React Context API",
+  //     "CocktailDB Api",
+  //     "Express JS",
+  //     "Css flexbox and grid",
+  //   ],
+  //   imageUrl: cocktailBD_api,
+  //   liveLink: "https://gifted-varahamihira-d66b31.netlify.app/",
+  //   gitHubLink: " https://github.com/foysalkazi11/react-cocktail-api-project",
+  // },
 ] as const;
 
 export const skillsData = [
   "HTML",
   "CSS",
-
+   "SCSS",
+  "Tailwind CSS",
   "JavaScript",
   "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
-  "Git",
-  "SCSS",
-  "Tailwind",
+   "Redux",
+   "ApolloGQL",
+  "React Native",
+  "Expo",
+   "Git",
+  "Supabase",
+  "Google AdMob",
+  // "Node.js",
   //   "Prisma",
-  "MongoDB",
-  "Redux",
+  // "MongoDB",
   //   "GraphQL",
-  "ApolloGQL",
-  "Express",
+  // "Express",
   //   "PostgreSQL",
   //   "Python",
   //   "Django",
-  "Framer Motion",
+  // "Framer Motion",
 ] as const;

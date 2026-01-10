@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:hostinger": "next build && node scripts/create-deployment-zip.js",
+    "deploy:zip": "node scripts/create-deployment-zip.js",
     "start": "next start",
     "lint": "next lint"
   },
@@ -32,6 +34,7 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
-    "@types/react-vertical-timeline-component": "^3.3.3"
+    "@types/react-vertical-timeline-component": "^3.3.3",
+    "archiver": "^7.0.1"
   }
 }
