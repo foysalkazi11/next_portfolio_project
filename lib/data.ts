@@ -6,6 +6,7 @@ import corpcommentImg from "@/public/project_moment.png";
 import furniture_store from "@/public/e_furniture_store.png";
 import cocktailBD_api from "@/public/cocktailDB_project.png";
 import spotLocal from "@/public/spotLocal.png";
+import ourGournadi from "@/public/our_gournadi.png";
 import bloodLinkSearch from "@/public/BloodLink_serach.png";
 
 export const links = [
@@ -66,9 +67,9 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Spot Local",
+    title: "Our Gournadi",
     description:
-      "SpotLocal is a full-stack local business discovery platform that shows nearby businesses with real-time notifications, interactive maps, geolocation search, multi-provider auth, and multi-language support. Features infinite scroll pagination, admin panel, and review system.",
+      "Our Gournadi is a full-stack local business discovery platform that shows nearby businesses with real-time notifications, interactive maps, geolocation search, multi-provider auth, and multi-language support. Features infinite scroll pagination, admin panel, and review system.",
     tags: [
       "React",
       "TypeScript",
@@ -80,9 +81,9 @@ export const projectsData = [
       "Zod",
       "i18next",
     ],
-    imageUrl: spotLocal,
-    liveLink: "https://spotlocal.kazilab.com",
-    gitHubLink: "https://github.com/foysalkazi11/spotLocal",
+    imageUrl: ourGournadi,
+    liveLink: "https://ourgournadi.kazilab.com",
+    gitHubLink: "https://github.com/foysalkazi11/our-gournadi",
   },
   {
     title: "BloodLink",
