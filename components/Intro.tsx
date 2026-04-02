@@ -8,6 +8,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import useSectionInView from "@/lib/hooks/useSectionInView";
 import { useActiveSectionContext } from "@/context/active-section-context";
+const profilePic = "@/public/profile_pic_two.png";
 const Intro = () => {
   const { ref } = useSectionInView("Home", 0.5);
   const { setTimeOfLastClick, setActiveSection } = useActiveSectionContext();
@@ -25,7 +26,7 @@ const Intro = () => {
             transition={{ type: "tween", duration: 0.2 }}
           >
             <Image
-              src={"/profile_pic_two.png"}
+              src={profilePic}
               alt="pro_pic"
               width={192}
               height={192}
